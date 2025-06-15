@@ -1,7 +1,22 @@
 <html>
   
   <head>
-    <title>
+   <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+
+  const firebaseConfig = {
+   apiKey: "AIzaSyCA6oxno4zHhbBgOB7Y5EpmR3fMl9Y8SX4",
+   authDomain: "live-281b2.firebaseapp.com",
+     projectId: "live-281b2",
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+</script>
+
+    
+   <title>
       Untitled Project
     </title>
     <meta charset="utf-8" />
