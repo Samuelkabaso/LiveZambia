@@ -1,3 +1,15 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCA6oxno4zHhbBgOB7Y5EpmR3fMl9Y8SX4",
+  authDomain: "live-281b2.firebaseapp.com",
+   projectId: "live-281b2",
+};
+const app = initializeApp(firebaseConfig);
+
+
+// Initialize Firebase & Firestore
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 // Navigate Screens
 onEvent('SignUp', 'click', function() {
   setScreen('SelectAccount');
